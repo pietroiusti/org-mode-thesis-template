@@ -1,0 +1,156 @@
+# #+TITLE: 
+#+SUBTITLE: 
+# #+AUTHOR: Giulio Pietroiusti
+#+DATE:
+#+KEYWORDS:
+#+CREATOR:
+
+# #+OPTIONS: texht:t toc:nil
+
+#+OPTIONS: texht:t toc:nil
+#+LATEX_CLASS: myreport
+#+LATEX_CLASS_OPTIONS: [a4paper, 12pt, hidelinks]
+#+LATEX_HEADER: \usepackage[backend=biber,style=authoryear]{biblatex}
+#+LATEX_HEADER: \addbibresource{/home/gp/Nextcloud/org/references.bib}
+#+LATEX_HEADER: \usepackage{gb4e}
+#+LATEX_HEADER: \usepackage{footnotebackref}
+#+LATEX_HEADER: \hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=cyan,citecolor=blue}
+#+LATEX_HEADER: \usepackage[switch*]{lineno}
+
+# #+LATEX_HEADER: \usepackage{setspace}
+# #+LATEX_HEADER_EXTRA: \doublespacing
+
+#+EXCLUDE_TAGS: noexport
+
+
+# TO REMOVE CHAPTERS HEADINGS
+# #+LATEX_HEADER: \usepackage{titlesec}
+# #+LATEX_HEADER_EXTRA: \titleformat{\chapter}{}{}{0em}{\bf\LARGE}
+
+
+# TO START CHAPTER NUMBERING FROM ZERO
+#+begin_export latex
+\setcounter{chapter}{-1}
+#+end_export
+
+
+# title page
+# 
+# UB Logo
+# 
+# Title
+# 
+# Supervisors
+# 
+# Tutor
+#
+# Faculty of Philosophy
+# PhD Programme: Cognitive Science and Language
+#
+# Month Years
+
+
+#+begin_export latex
+%titlepage
+\thispagestyle{empty}
+\begin{center}
+\begin{minipage}{0.75\linewidth}
+    \centering
+%University logo
+    \includegraphics[width=0.5\linewidth]{logo.png}\par
+    %\rule{0.4\linewidth}{0.15\linewidth}\par
+    \vspace{3cm}
+%Thesis title
+    {\uppercase{\Large Title\par}}
+    \vspace{3cm}
+%Author's name
+    {\Large Pippo Tano\par}
+    \vspace{3cm}
+%Degree
+    {\Large A thesis submitted for the degree of Doctor of Philosophy\par}
+    \vspace{3cm}
+%Date
+    {\Large June 2022}
+\end{minipage}
+\end{center}
+\clearpage
+#+end_export
+
+
+#+begin_export latex
+\setcounter{tocdepth}{0}
+\tableofcontents
+#+end_export
+
+
+* Acknowledgements
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+#+begin_export latex
+\addcontentsline{toc}{chapter}{Acknowledgements}
+#+end_export
+
+* Summary
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+#+begin_export latex
+\addcontentsline{toc}{chapter}{Summary}
+#+end_export
+
+* Introduction. Persuasion and Challenge in the Noncognitive Theory of Value
+# :PROPERTIES:
+# :UNNUMBERED: t
+# :END:
+
+# #+begin_export latex
+# \addcontentsline{toc}{chapter}{Introduction}
+# #+end_export
+
+** Science and Ethics
+bla bla
+** other Stuff
+bla bla
+* Disagreement and Conﬂict: How Moral and Taste Judgements Do /Not/ Differ
+** Introduction
+bla bla
+** Expression
+bla bla
+* Having a Disagreement: Expression, Persuasion and Demand
+** 
+bla bla
+** 
+bla bla
+** 
+bla bla
+*** 
+ble ble
+* Conclusions
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+#+begin_export latex
+\addcontentsline{toc}{chapter}{Conclusions}
+#+end_export
+
+parencite: [[parencite:&glanzberg2007]]
+
+cite: [[cite:&ramsey1931]]
+
+textcite: [[textcite:&ramsey1931 p. 20]]
+
+test: [[cite:&ramsey1931]]
+
+smartcite: [[smartcite:&glanzberg2007]]
+
+citedate (and hyperlink?): [[citedate:&glanzberg2007]]
+
+citedate* (and hyperlink?): [[citedate*:&glanzberg2007]]
+
+bla bla
+
+\printbibliography
